@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NeuraNest - Intelligent Home Solutions</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="new5.js">
+    <link rel="stylesheet" href="about.css">
+    
+</head>
+<body>
+    <!-- Header -->
+    <header id="header">
+        <!--<nav class="navbar">
+          <a href="#" class="logo">
+                <i class="fas fa-home"></i>
+                <span>NexusSmart</span>
+            </a>-->
+            
+            <nav>
+                <ul class="sidebar">
+                    <li onclick=hideSidebar()><a href="#"><img src="imgSH/close.svg" alt="logo" width="26" height="26"></a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="product.html">Product</a></li>
+                    <li><a href="about.html #serv">Service</a></li>
+                    <li><a href="ourteam.html">Our Team</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <ul>
+                    <li class="logo"><a href="#">NeuraNest</a></li>
+                    <li class="hideOnMobile"><a href="index.html">Home</a></li>
+                    <li  class="hideOnMobile"><a href="about.html">About</a></li>
+                    <li  class="hideOnMobile"><a href="product.html">Product</a></li>
+                    <li  class="hideOnMobile"><a href="about.html #serv">Service</a></li>
+                    <li  class="hideOnMobile"><a href="ourteam.html">Our Team</a></li>
+                    <li  class="hideOnMobile"><a href="contact.html">Contact</a></li>
+                    <li class="menu-button" onclick=showSidebar()><a href="#"><img src="imgSH/menu.svg" alt="logo" width="26" height="26"></a></li>
+                </ul>
+                <!--<a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="product.html">Products</a>
+                <a href="about.html#serv">Service</a>
+                <a href="ourteam.html">Our Team</a>
+                <a href="contact.html">Contact</a>-->
+            </nav>
+
+             <script>
+                function showSidebar(){
+                    const sidebar= document.querySelector('.sidebar')
+                    sidebar.style.display = 'flex'
+                }
+                function hideSidebar(){
+                    const sidebar= document.querySelector('.sidebar')
+                    sidebar.style.display = 'none'
+                }
+            </script>
+            
+            <!--<div class="cta-buttons">-->
+                <!--<button class="btn btn-outline">Login</button>-->
+                <!--<button class="btn btn-primary">Get Started</button>-->
+            </div>
+            
+    </header>
+    
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>NeuraNest</h1>
+            <h3>Welcome to the Future of Living</h3>
+            <p>NeuraNest is pioneering seamless, AI-powered home automation tailored for the dynamic lifestyles of modern African homes. From energy optimization to intuitive control, we are creating connected environments that adapt, learn, and respond.</p>
+            <div class="hero-buttons">
+                <a href="product.html"><button class="btn btn-primary">Products</button></a>
+                <button class="btn btn-outline">Watch Demo</button>
+            </div>
+            <div class="hero-image">
+                <img src="./imgSH/jakub-zerdzicki-uxYLtGRyGKQ-unsplash.jpg" alt="Smart Home System">
+            </div>
+        </div>
+    </section>
+    
+    <!-- Features Section -->
+    <section class="features">
+        <div class="section-header">
+            <h2>Why NeuraNest Exits</h2>
+            <p>We believe homes should think with you, not just for you.
+Born in the heart of Abuja, NeuraNest builds embedded, secure, and adaptive smart home systems that empower homeowners to optimize comfort, safety, and efficiency—without the complexity. Our mission is to redefine African living through scalable, user-centered innovation. Human-centered technology. Locally engineered. Globally scalable.</p>
+        </div>
+        
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-robot"></i>
+                </div>
+                <h3>AI-Powered Automation</h3>
+                <p>Our intelligent system learns your routines and preferences to automate your home perfectly, saving you time and energy.</p>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-shield-alt"></i>
+                </div>
+                <h3>Military-Grade Security</h3>
+                <p>Advanced encryption and multi-factor authentication protect your home and data from any digital threats.</p>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-random"></i>
+                </div>
+                <h3>Seamless Integration</h3>
+                <p>Works with 5000+ devices from all major brands, creating a unified smart home experience.</p>
+            </div>
+        </div>
+
+            
+
+            <section id="pros">
+                    <div class="features-grid">
+                                <div class="feature-card">
+                            <span class="">
+                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAQhJREFUSEvVlLsNAjEMhu0BgA0SbwEldNRAS8MK7MEKSLQIFqCADtjC3gDEAOZABKFcTrlEPMR1p9j/5zfChz/8sD48AUTUVdXtO4CI2GPm3U3rCbDW6jvEnYaI3LVLAPeQC3OB/h6Q0pPXmtfOILUnriTJgFhPfMHfA3Knx/crTVFKU2NBBBct5pT7/r1bFIowNiH+e0ijMgNjzAgRlwBwEZHmzTkAPAFAq7CZFjaz2gBjzBgRF/djhdhh5mMIQEQdVd0/7CbMPPchpQy8DV6LyNA5hUpirV0BwMC/ou6/CnBGxD4zH14jqqo5EbVVdQMADX/zk6aoTlOjJcqd9yq/pAxy4P8PuAJoh7EZDikQZwAAAABJRU5ErkJggg==">
+                            </span>
+                            <h4 class="u-align-center u-text u-text-2">Smart Climate Control</h4>
+                            <p class="u-align-center u-text u-text-3">Automated comfort, all year round.</p>
+                            <a href="product.html#scc" class=""><button class="btn btn-outline">more</button></a>
+                        </div>
+                        <div class="feature-card">
+                            <span class="">
+                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAARpJREFUSEvVlD1Ow0AQhWeC4Qa0fnsKfqqkJIKKg1KBoCQVhFPs24Y7xCKDbG0kZ4njTbAlcGXNzrxv3uyPysifjqwvfwsA4KF2TPI+13m2AwArETmNwhXJsxxIL8A5d2Vmb7vEVPXae/++D7QXAOBZRG5qATP7CCFc1v9lWS5V9SIKv5Ccd0E6AQC+RGQSC+9IPrVFANyKyGOMrUme7HSZBp1zUzN73cRj4bqjw0lspFlW1Zn3ftHO/eEAgMWEBclZzkYCqBuaxhO2pdkJINl7AJKRNY2ldb2AlqMtM6nQJm8wQFVV50VRfIYQmrsxOKB1CJop/D/A6CMabJNz7sGv9mA0QK5wmpd9D0YDHCt88HM9FOigB+0Y6DcR364ZM977FgAAAABJRU5ErkJggg==">
+                            </span>
+                            <h4 class="">Home Security AI</h4>
+                            <p class="">AI camera systems utilize machine learning algorithms to analyze and interpret what is happening in a scene in real-time.</p>
+                             <a href="product.html#hsAI" class=""><button class="btn btn-outline">more</button></a>
+                        </div>
+                        
+                        <div class="feature-card">
+                            <span class="">
+                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAftJREFUSEu1lLGKFEEQhqt7HBDB6LLdna4WAwMRQQ4PjrvjFC4xMvcBzAzEC3wDMTEwMTHzJRRR8RTlRAMR467q3Y00NJC97ZJedo5hnNnpXdjOeqb6/+qvqm4Fa15qzfqQBOj3+xuj0ej3Ksl0AhDxFwBshBCue++/LAvpBAwGg60syz5HYSLqjK8nkHQAEWV+cJuIPi3jIglgjNlRSh2t4iIJEIVLFyGEPe/9DJaykgHW2n0RedvmoiiKi1rrfSJ6XgUnA6ouJpOJGY/HviKUIeJJ3IcQ+t77cfmvE1Bp8KnedDq9OhwOv1czRcRDAHgsIifMnK8MEJEjZt6LAtZaG0KI+6LWpyve+x/xW7KDpjtQuhORA2Z+bYy5q5R6JiLHzLzVCGgqyYLGbmqt4+3+S0Rnqy7KhP5z0ARQSt1wzr1rGssyvhSs71sBqc/C0gBjzEQpdUZEdpj546LL1Ov1TJ7nBABCRDqpREVR7Gqt388apNR959yTNsh89jMRucfMTxHxDgC8AICfRHS5dYoQ8SsAXCuF28qFiNsi8pKZz1ezF5FdZv7QCrDW3haRRwBwae7kgnPOLSqXMeZAKfWqPnGnTW4bzwhi5ocdvTiX5/mfGCMim8wcKzBbbYBvAHBIRG8WCdeeilsAcJOIHlS/d97kVEBb3NoB/wCoUfkZt6rLRAAAAABJRU5ErkJggg==">
+                            </span>
+                            <h4 class="">Voice and App Control</h4>
+                            <p class="">Voice and app control make smart climate systems more intuitive, efficient, and user-friendly</p>
+                             <a href="product.html#vac" class=""><button class="btn btn-outline">more</button></a>
+                        </div>
+                        
+                        <div class="feature-card">
+                            <span class="">
+                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAV1JREFUSEvtlb9KxEAQxmcgKVXERpvM+BDilQoW1qetj2DhEwg+gYWVpa1oZ2WhnfoIQoqdbbQ8sRICIxuSY41Jds15YGGq3ezs/Ob79h/CnD+cc36YCcDMm6p6CwALbYWKCA4GENEVAIz7HJgCmHlLVe9CdrkJLoaZR6r64NqqemStPfXnEpG6/hRQ/4gFENEEAJZU9dhae+LmEdFNmqbjPM8/OgF1hSGQn6BKXlYMAGcicvirAE/9RESWfeA3i7oUtFRcWuQpfRWRNdfPsmwfES8B4F1EFstFayZoWtQcZ+ZVVX2p4oyIrFfJDxDxwrURcWSMeRoEiNgU1yKyV4LaFHQtYm0hEZ0DwEZRFDtJkjwDwEql5g0Rd40xj7ULgwChXeaP/01AyMKZFfwDfrJJyti+gxp10ELEaEAoUWi87S6rH5CoB6cPgIjbxpj7ZszgJzOk5stVERs8JO4TuFAmKMmief0AAAAASUVORK5CYII=">
+                            </span>
+                            <h4 class="">Energy Intelligency</h4>
+                            <p class="">Energy intelligence is transforming how we produce, distribute, and consume energy. By leveraging AI, IoT, and big data, businesses and households can achieve higher efficiency, lower costs, and a greener future.</p>
+                             <a href="product.html#ei" class=""><button class="btn btn-outline">more</button></a>
+                        </div>
+                    </div>
+            </section>
+    </section>
+    
+    <!-- Products Section -->
+    <section class="products">
+        <div class="section-header">
+            <h2>Our Smart Home Products</h2>
+            <p>Discover our range of innovative products designed to make your home smarter, safer, and more efficient.</p>
+        </div>
+        
+        <div class="products-grid">
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="./imgSH/hub.jpg" alt="Smart Hub">
+                </div>
+                <div class="product-info">
+                    <h3>Hub Pro</h3>
+                    <p>The brain of your smart home with voice control, AI automation, and compatibility with all major platforms.</p>
+                    <!--<div class="product-price">
+                        <span class="price">$249.99</span>-->
+                        <!--<span class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </span>
+                    </div>-->
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="./imgSH/lock.jpg" alt="Smart Lock">
+                </div>
+                <div class="product-info">
+                    <h3>Smart Lock X</h3>
+                    <p>Keyless entry with fingerprint, facial recognition, and remote access via smartphone app.</p>
+                    <!--<div class="product-price">
+                        <span class="price">$179.99</span>
+                        <span class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </span>
+                    </div>-->
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="./imgSH/weather.jpg" alt="Smart Thermostat">
+                </div>
+                <div class="product-info">
+                    <h3>Climate Control Pro</h3>
+                    <p>Learn your schedule and preferences to optimize home temperature while saving energy.</p>
+                    <!--<div class="product-price">
+                        <span class="price">$129.99</span>
+                        <span class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </span>
+                    </div>-->
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="./imgSH/360 cam.jpg" alt="Security Camera">
+                </div>
+                <div class="product-info">
+                    <h3>360° Security Cam</h3>
+                    <p>4K resolution with night vision, motion tracking, and AI-powered threat detection.</p>
+                    <!--<div class="product-price">
+                        <span class="price">$199.99</span>
+                        <span class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </span>
+                    </div>-->
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- How It Works -->
+    <section class="how-it-works">
+        <div class="section-header">
+            <h2>How NexusSmart Works</h2>
+            <p>Getting started with your smart home is easier than you think. Just follow these simple steps.</p>
+        </div>
+        
+        <div class="steps">
+            <div class="step">
+                <div class="step-number">1</div>
+                <h3>Choose Your Devices</h3>
+                <p>Select from our range of smart home products that fit your needs and lifestyle.</p>
+            </div>
+            
+            <div class="step">
+                <div class="step-number">2</div>
+                <h3>Installation</h3>
+                <p>Our certified technicians will install and configure your system in no time.</p>
+            </div>
+            
+            <div class="step">
+                <div class="step-number">3</div>
+                <h3>Connect & Control</h3>
+                <p>Download our app to control your home from anywhere with your smartphone.</p>
+            </div>
+            
+            <div class="step">
+                <div class="step-number">4</div>
+                <h3>Enjoy Automation</h3>
+                <p>Let our AI learn your routines and automate your home for maximum comfort.</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="section-header">
+            <h2>What Our Customers Say</h2>
+            <p>Join thousands of happy homeowners who transformed their living experience.</p>
+        </div>
+        
+        <div class="testimonials-slider">
+            <div class="testimonials-container">
+                <div class="testimonial">
+                    <!--<img src="https://randomuser.me/api/portraits/women/45.jpg" alt="Sarah J." class="testimonial-avatar">-->
+                    <p class="testimonial-text">"NexusSmart completely changed how we live. The automation features save us so much time, and the security system gives us peace of mind when we're away from home."</p>
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4 class="testimonial-author">Sarah J.</h4>
+                    <p class="testimonial-role">Homeowner, Abuja</p>
+                </div>
+                
+                <div class="testimonial">
+                    <!--<img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Michael T." class="testimonial-avatar">-->
+                    <p class="testimonial-text">"As a tech enthusiast, I've tried many smart home systems. NexusSmart stands out with its seamless integration and intuitive interface. Highly recommended!"</p>
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <h4 class="testimonial-author">Michael T.</h4>
+                    <p class="testimonial-role">Tech Blogger, Port Harcourt</p>
+                </div>
+                
+                <div class="testimonial">
+                    <!--<img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Jennifer L." class="testimonial-avatar">-->
+                    <p class="testimonial-text">"The installation team was professional and efficient. I love how I can control everything with my voice or phone. It's like living in the future!"</p>
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4 class="testimonial-author">Jennifer L.</h4>
+                    <p class="testimonial-role">Contractor, Lagos</p>
+                </div>
+            </div>
+            
+            <div class="slider-controls">
+                <button class="slider-btn prev-btn"><i class="fas fa-chevron-left"></i></button>
+                <button class="slider-btn next-btn"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+
+     <!-- Stats Section -->
+    <section class="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number" data-count="250">250+</div>
+                    <div class="stat-label">Happy Clients</div>
+                </div>
+                
+                <div class="stat-item">
+                    <div class="stat-number" data-count="500">300+</div>
+                    <div class="stat-label">Projects Completed</div>
+                </div>
+                
+                <div class="stat-item">
+                    <div class="stat-number" data-count="99">99%</div>
+                    <div class="stat-label">Success Rate</div>
+                </div>
+                
+                <div class="stat-item">
+                    <div class="stat-number" data-count="24">20+</div>
+                    <div class="stat-label">Support Staff</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="cta-content">
+            <h2>Ready to Transform Your Home?</h2>
+            <p>Join the NeuraNest revolution today and experience unparalleled comfort, security, and efficiency.</p>
+            <div class="cta-buttons">
+                <button class="btn btn-white"><a href="contact.html"> Get Started Now</a></button>
+                <button class="btn btn-transparent">Schedule a Demo</button>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+   
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>About Us</h3>
+                    <p>NeuraNest is dedicated to creating intelligent living spaces that enhance comfort, security, and efficiency through cutting-edge technology.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="products.html">Products</a>
+                    <a href="about.html #serv">Service</a>
+                    <a href="ourteam.html">Our Team</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <p>Aseema ached o street</p>
+                    <p>Phone: +234 000 000 000</p>
+                    <p>Email: info@NeuraNest.com</p>
+                </div>
+            </div>
+            <div class="social-links">
+                <a href="#"><span>FB</span></a>
+                <a href="#"><span>TW</span></a>
+                <a href="#"><span>IG</span></a>
+                <a href="#"><span>LI</span></a>
+                <a href="#"><span>YT</span></a>
+            </div>
+            <div class="copyright">
+                <p>&copy; Aseema ached o street beside deeper life bible church High level ,Makurdi Benue State.</p>
+            </div>
+        </div>
+    </footer>
+    </section>
+    
+    <script>
+
+     // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const nav = document.getElementById('nav');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            nav.classList.toggle('active');
+            mobileMenuBtn.innerHTML = nav.classList.contains('active') ? 
+                '<i class="fas fa-times"></i>' : '<i class="fas fa-bars"></i>';
+        });
+        
+        // Header Scroll Effect
+        const header = document.getElementById('header');
+        
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 100) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+        
+        // Testimonial Slider
+        const testimonials = document.querySelectorAll('.testimonial');
+        const dots = document.querySelectorAll('.slider-dot');
+        let currentSlide = 0;
+        
+        function showSlide(index) {
+            testimonials.forEach(testimonial => testimonial.classList.remove('active'));
+            dots.forEach(dot => dot.classList.remove('active'));
+            
+            testimonials[index].classList.add('active');
+            dots[index].classList.add('active');
+            currentSlide = index;
+        }
+        
+        dots.forEach((dot, index) => {
+            dot.addEventListener('click', () => showSlide(index));
+        });
+        
+        // Auto slide change
+        setInterval(() => {
+            let nextSlide = (currentSlide + 1) % testimonials.length;
+            showSlide(nextSlide);
+        }, 5000);
+        
+        // Animated counter for stats
+        const statNumbers = document.querySelectorAll('.stat-number');
+        
+        function animateCounters() {
+            statNumbers.forEach(stat => {
+                const target = parseInt(stat.getAttribute('data-count'));
+                const duration = 2000; // 2 seconds
+                const step = target / (duration / 16); // 60fps
+                let current = 0;
+                
+                const counter = setInterval(() => {
+                    current += step;
+                    if (current >= target) {
+                        clearInterval(counter);
+                        stat.textContent = target + (stat.getAttribute('data-count') === '99' ? '%' : '+');
+                    } else {
+                        stat.textContent = Math.floor(current) + (stat.getAttribute('data-count') === '99' ? '%' : '+');
+                    }
+                }, 16);
+            });
+        }
+        
+        // Only animate when stats section is in view
+        const statsSection = document.querySelector('.stats');
+        const observer = new IntersectionObserver((entries) => {
+            if (entries[0].isIntersecting) {
+                animateCounters();
+                observer.unobserve(statsSection);
+            }
+        }, { threshold: 0.5 });
+        
+        observer.observe(statsSection);
+    </script>
+
+</body>
+</html>

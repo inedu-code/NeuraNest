@@ -1,0 +1,146 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
+        <meta name="keywords" content="NeuraNest">
+        <meta name="description" content="">
+        <title>NeuraNest - Products</title>
+        <link rel="stylesheet" href="product.css">
+    </head>
+  <body>
+            <nav>
+                <ul class="sidebar">
+                    <li onclick=hideSidebar()><a href="#"><img src="imgSH/close.svg" alt="logo" width="26" height="26"></a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="product.html">Products</a></li>
+                    <li><a href="about.html #serv">Services</a></li>
+                    <li><a href="ourteam.html">Our Team</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <ul>
+                    <li class="logo"><a href="#">NeuraNest</a></li>
+                    <li class="hideOnMobile"><a href="index.html">Home</a></li>
+                    <li  class="hideOnMobile"><a href="about.html">About</a></li>
+                    <li  class="hideOnMobile"><a href="product.html">Products</a></li>
+                    <li  class="hideOnMobile"><a href="about.html #serv">Services</a></li>
+                    <li class="hideOnMobile"><a href="ourteam.html">Our Team</a></li>
+                    <li  class="hideOnMobile"><a href="contact.html">Contact</a></li>
+                    <li class="menu-button" onclick=showSidebar()><a href="#"><img src="imgSH/menu.svg" alt="logo" width="26" height="26"></a></li>
+                </ul>
+            </nav>
+<script>
+// Simple JavaScript for mobile menu toggle
+document.querySelector('.mobile-menu-btn').addEventListener('click', function() {
+  const navLinks = document.querySelector('.nav-links');
+  navLinks.classList.toggle('active');
+  
+  // Close all dropdowns when mobile menu is toggled
+  document.querySelectorAll('.dropdown').forEach(dropdown => {
+    dropdown.classList.remove('active');
+  });
+});
+
+// Toggle dropdowns on mobile
+document.querySelectorAll('.dropdown-btn').forEach(btn => {
+  btn.addEventListener('click', function() {
+    if (window.innerWidth <= 768) {
+      const dropdown = this.closest('.dropdown');
+      dropdown.classList.toggle('active');
+    }
+  });
+});
+                function showSidebar(){
+                    const sidebar= document.querySelector('.sidebar')
+                    sidebar.style.display = 'flex'
+                }
+                function hideSidebar(){
+                    const sidebar= document.querySelector('.sidebar')
+                    sidebar.style.display = 'none'
+                }
+</script>
+
+<section class="page-container">
+    <marquee class="marq">Our flagship platform integrates IoT sensors, machine learning algorithms, and real-time data analytics to power:</marquee>
+  <div class="side-by-side-container" id="scc">
+    <div class="image-column">
+      <img src="./imgSH/smart climate control1.jpg" alt="Creative workspace">
+    </div>
+    <div class="text-column">
+      <h2>Smart Climate Control</h2>
+      <p>Smart climate control transforms your home into a hub of innovation, offering tailored experiences that adapt to your lifestyle. Digital Installers specializes in creating advanced climate systems that optimize your environment and add a touch of luxury to your everyday life. Whether you're aiming to reduce energy costs, embrace cutting-edge technology, or create a more refined atmosphere, our expert solutions deliver lasting value. Experience the future of home living with us, where sophistication meets smart innovation.</p>
+    </div>
+  </div>
+  <div class="side-by-side-container" id="ei">
+    <div class="image-column">
+      <img src="./imgSH/energy intelligency1.jpg" alt="Creative workspace">
+    </div>
+    <div class="text-column">
+      <h2>Energy Intelligency</h2>
+      <p>The use of advanced data analytics, artificial intelligence (AI), and IoT (Internet of Things) technologies to optimize energy consumption, reduce waste, and improve efficiency across industries, buildings, and power grids. It enables smarter decision-making by analyzing real-time and historical energy data.</p>
+    </div>
+  </div>
+  <div class="side-by-side-container" id="hsAI">
+    <div class="image-column">
+      <img src="./imgSH/home security AI1.jpg" alt="Creative workspace">
+    </div>
+    <div class="text-column">
+      <h2>Home Security AI</h2>
+      <p>AI-powered cameras and sensors can intelligently analyze scenes, distinguish between humans, vehicles, and other objects, and trigger alerts for specific anomalies, surpassing the capabilities of traditional security systems. Its algorithms are based on what the technology has been preset with (i.e., the movement of a vehicle in the wrong direction) or what it has learned from a given scene over time. By analyzing visual data, the AI surveillance system can learn to identify objects and recognize patterns that constitute a normal scene.</p>
+    </div>
+  </div>
+  <div class="side-by-side-container" id="vac">
+    <div class="image-column">
+      <img src="./imgSH/voice and app control1.jpg" alt="Creative workspace">
+    </div>
+    <div class="text-column">
+      <h2>Voice and App Contrl</h2>
+      <p>Voice and app control are two key technologies that allow users to manage their smart thermostats, HVAC systems, and climate devices remotely using smartphones, tablets, or voice commands. These features enhance convenience, energy efficiency, and automation in modern smart homes and buildings.
+
+</p>
+    </div>
+  </div>
+
+<footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>About Us</h3>
+                    <p>NeuraNest is dedicated to creating intelligent living spaces that enhance comfort, security, and efficiency through cutting-edge technology.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="product.html">Products</a>
+                    <a href="about.html #serv">Services</a>
+                    <a href="ourteam.html">Our Team</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <p>Aseema ached o street</p>
+                    <p>Phone: +234 000 000 000</p>
+                    <p>Email: info@NeuraNest.com</p>
+                </div>
+            </div>
+            <div class="social-links">
+                <a href="#"><span>FB</span></a>
+                <a href="#"><span>TW</span></a>
+                <a href="#"><span>IG</span></a>
+                <a href="#"><span>LI</span></a>
+                <a href="#"><span>YT</span></a>
+            </div>
+            <div class="copyright">
+                <p>&copy; Aseema ached o street beside deeper life bible church High level ,Makurdi Benue State.</p>
+            </div>
+        </div>
+    </footer>
+    </section>
+  </body>
+</html>
+
+
+

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NeuraNest - Contact Us</title>
+    <link rel="stylesheet" href="contact.css">
+     <link rel="stylesheet" href="about.css">
+
+</head>
+<body>
+    <nav>
+                <ul class="sidebar">
+                    <li onclick=hideSidebar()><a href="#"><img src="imgSH/close.svg" alt="logo" width="26" height="26"></a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="product.html">Product</a></li>
+                    <li><a href="about.html #serv">Service</a></li>
+                    <li><a href="ourteam.html">Our Team</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <ul>
+                    <li class="logo"><a href="#">NeuraNest</a></li>
+                    <li class="hideOnMobile"><a href="index.html">Home</a></li>
+                    <li  class="hideOnMobile"><a href="about.html">About</a></li>
+                    <li  class="hideOnMobile"><a href="product.html">Product</a></li>
+                    <li  class="hideOnMobile"><a href="about.html #serv">Service</a></li>
+                    <li class="hideOnMobile"><a href="ourteam.html">Our Team</a></li>
+                    <li  class="hideOnMobile"><a href="contact.html">Contact</a></li>
+                    <li class="menu-button" onclick=showSidebar()><a href="#"><img src="imgSH/menu.svg" alt="logo" width="26" height="26"></a></li>
+                </ul>
+            </nav>
+            <script>
+                 function showSidebar(){
+                    const sidebar= document.querySelector('.sidebar')
+                    sidebar.style.display = 'flex'
+                }
+                function hideSidebar(){
+                    const sidebar= document.querySelector('.sidebar')
+                    sidebar.style.display = 'none'
+                }
+            </script>
+    <header class="heado">
+        <div class="container">
+            <h1>Our NeuraNest Team</h1>
+            <h4 class="subtitleOurteam">We're here to help you with your smart home needs</h4>
+        </div>
+    </header>
+    
+    
+    <section class="team">
+        <div class="container">
+            <div class="section-title">
+                <h2>Meet Our Team</h2>
+            </div>
+            
+            <div class="team-grid">
+                <div class="team-member">
+                    <div class="member-image">
+                        <img src="">
+                    </div>
+                    <div class="member-info">
+                        <h3></h3>
+                        <p>CEO & Founder</p>
+                    </div>
+                </div>
+                
+                <div class="team-member">
+                    <div class="member-image">
+                        <img src="">
+                    </div>
+                    <div class="member-info">
+                        <h3></h3>
+                        <p>Chief Technology Officer</p>
+                    </div>
+                </div>
+                
+                <div class="team-member">
+                    <div class="member-image">
+                        <img src="">
+                    </div>
+                    <div class="member-info">
+                        <h3></h3>
+                        <p>Product Designer</p>
+                    </div>
+                </div>
+                
+                <div class="team-member">
+                    <div class="member-image">
+                        <img src="">
+                    </div>
+                    <div class="member-info">
+                        <h3></h3>
+                        <p>Lead Engineer</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+   <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>About Us</h3>
+                    <p>NeuraNest is dedicated to creating intelligent living spaces that enhance comfort, security, and efficiency through cutting-edge technology.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="products.html">Products</a>
+                    <a href="about.html #serv">Service</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <p>Aseema ached o street</p>
+                    <p>Phone: +234 000 000 000</p>
+                    <p>Email: info@NeuraNest.com</p>
+                </div>
+            </div>
+            <div class="social-links">
+                <a href="#"><span>FB</span></a>
+                <a href="#"><span>TW</span></a>
+                <a href="#"><span>IG</span></a>
+                <a href="#"><span>LI</span></a>
+                <a href="#"><span>YT</span></a>
+            </div>
+            <div class="copyright">
+                <p>&copy; Aseema ached o street beside deeper life bible church High level ,Makurdi Benue State.</p>
+            </div>
+        </div>
+    </footer>
+    </section>
+
+    
+    <script>
+        // Animation on scroll
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('in-view');
+                }
+            });
+        }, {
+            threshold: 0.1
+        });
+        
+        document.querySelectorAll('.about-text, .about-image, .feature-card, .team-member').forEach(el => {
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>
